@@ -1,3 +1,4 @@
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import './global.css'
 import { Slot, SplashScreen, Stack } from 'expo-router'
 import { useFonts } from 'expo-font'
@@ -23,8 +24,11 @@ const RootLayout = () => {
   if( !fontsLoaded && !error ) return null
 
   return (
-    <Slot />
+    // <Slot />
     // <Stack />
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Slot />
+    </GestureHandlerRootView>
   )
 }
 

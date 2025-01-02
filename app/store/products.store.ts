@@ -1,4 +1,4 @@
-export const products = [
+const products = [
   {
     id: '1',
     title: 'Auriculares Inalámbricos',
@@ -35,3 +35,5 @@ export const products = [
     price: 299.99,
   },
 ];
+
+export default products
